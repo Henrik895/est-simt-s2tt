@@ -1,0 +1,11 @@
+python -W ignore finetune.py \
+    --train-manifest train_manifest.json \
+    --eval-manifest eval_manifest.json \
+    --epochs 15 \
+    --batch-size 16 \
+    --log-steps 500 \
+    --eval-steps 40000 \
+    --warmup 2000 \
+    --patience 10 \
+    --store-metrics \
+    --output finetuned
